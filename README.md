@@ -16,3 +16,26 @@
 
 
 ![App](screen/Screenshot_1.jpg)
+
+
+Урок 2. Основы Spring. Spring Boot
+
+
+        Базовое задание:
+        Добавить в простое CRUD веб-приложение, которое было разработано на семинаре функцию удаления данных о пользователе:
+        1) В класс UserRepository добавить метод public void deleteById(int id) удаления записи пользователя из БД по ID.
+        2) В класс UserService добавить метод public void deleteById(int id) удаление пользователя через репозиторий.
+        3) В класс UserController добавить метод public String deleteUser(@PathVariable("id") int id) перехват команды на удаление студента от браузера.
+
+        Если задание выполнено верно, то при запуске приложения по адресу http://localhost:8080/users будет работать кнопка удаления пользователя по ID.
+
+        Задание "со звездочкой":
+        Реализовать метод обновления данных о пользователе.
+        - @GetMapping("/user-update/{id}")
+        - @PostMapping("/user-update")
+        - User update(User user)
+        - User getOne(int id)
+
+
+![localhost](screen/Screenshot_2.jpg)
+![localhost](screen/Screenshot_3.jpg)
